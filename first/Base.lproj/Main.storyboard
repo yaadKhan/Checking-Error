@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKG-BQ-N1D">
+                                <rect key="frame" x="0.0" y="691" width="142.66666666666666" height="45"/>
+                                <color key="backgroundColor" red="0.1445777292" green="0.2141578482" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="YTF-Of-CFW"/>
+                                </constraints>
+                                <state key="normal" title="Wahab">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PU6-ve-u8n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-nL-t5B">
+                                <rect key="frame" x="140.66666666666663" y="691" width="152.33333333333337" height="45"/>
+                                <color key="backgroundColor" red="0.93232492730000005" green="0.91908876660000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Afridi"/>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eJY-cJ-ttC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZG-eM-FYb">
+                                <rect key="frame" x="266.66666666666669" y="691" width="147.33333333333331" height="45"/>
+                                <color key="backgroundColor" red="0.24803929959265025" green="0.393207006407162" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Amir">
+                                    <color key="titleColor" red="0.93232492729095151" green="0.91908876659288719" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57t-GW-BLh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cb-Oy-lSb">
+                                <rect key="frame" x="16" y="57" width="382" height="277"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="277" id="Ufn-Dz-mgp"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quk-Dc-0hM">
+                                <rect key="frame" x="16" y="438" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7r6-tO-tNu"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yaI-nL-t5B" firstAttribute="baseline" secondItem="NZG-eM-FYb" secondAttribute="baseline" id="1SE-xa-jtX"/>
+                            <constraint firstItem="quk-Dc-0hM" firstAttribute="top" secondItem="6cb-Oy-lSb" secondAttribute="bottom" constant="104" id="6U1-I8-fQ6"/>
+                            <constraint firstItem="NZG-eM-FYb" firstAttribute="bottom" secondItem="AKG-BQ-N1D" secondAttribute="bottom" id="BBd-57-7Vg"/>
+                            <constraint firstItem="AKG-BQ-N1D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dwz-V9-aPV"/>
+                            <constraint firstItem="6cb-Oy-lSb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="FKa-Nz-I19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="quk-Dc-0hM" secondAttribute="trailing" constant="16" id="GSN-pc-0xu"/>
+                            <constraint firstItem="6cb-Oy-lSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HhS-YG-RIl"/>
+                            <constraint firstItem="yaI-nL-t5B" firstAttribute="leading" secondItem="AKG-BQ-N1D" secondAttribute="trailing" constant="-2" id="IoD-dD-9Yz"/>
+                            <constraint firstItem="yaI-nL-t5B" firstAttribute="baseline" secondItem="AKG-BQ-N1D" secondAttribute="firstBaseline" id="QOQ-jJ-i7n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AKG-BQ-N1D" secondAttribute="bottom" id="UZE-qU-juZ"/>
+                            <constraint firstItem="yaI-nL-t5B" firstAttribute="bottom" secondItem="AKG-BQ-N1D" secondAttribute="bottom" id="akD-0G-tNb"/>
+                            <constraint firstItem="NZG-eM-FYb" firstAttribute="leading" secondItem="AKG-BQ-N1D" secondAttribute="trailing" constant="124" id="bSa-Fr-W5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cb-Oy-lSb" secondAttribute="trailing" constant="16" id="eIS-wx-2hq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZG-eM-FYb" secondAttribute="trailing" id="lUv-s5-K72"/>
+                            <constraint firstItem="quk-Dc-0hM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p3r-0W-44b"/>
+                            <constraint firstItem="NZG-eM-FYb" firstAttribute="width" secondItem="AKG-BQ-N1D" secondAttribute="width" constant="5" id="tPA-rR-lwI"/>
+                            <constraint firstItem="yaI-nL-t5B" firstAttribute="width" secondItem="AKG-BQ-N1D" secondAttribute="width" constant="10" id="zDU-rI-h8T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerImg" destination="6cb-Oy-lSb" id="871-WB-ht0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>
